@@ -44,7 +44,7 @@
             "items": [
               {
                 "type": "label",
-                "text": "Read ProcessWire Blog",
+                "text": "Ignore these, they will go away",
                 "class": "bold",
                 "style": {
                   "padding": "20"
