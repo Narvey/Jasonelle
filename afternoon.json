@@ -34,7 +34,7 @@
               "action":{
                 "type": "$global.set",
                 "options": {
-                  "curDate": "{{new Date()}}"
+                  "curDate": "{{new Date().toString()}}"
                 },
                 "success": {
                   "type": "$reload",
@@ -48,48 +48,64 @@
           {
             "items": [
               {
-                "type": "label",
-                "text": "Ignore these, they will go away",
-                "class": "bold",
-                "style": {
-                  "padding": "20"
-                },
-                "href": {
-                  "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/blog.json"
-                }
+                "type":"horizontal",
+                "components":[
+                  {
+                    "type": "button",
+                    "text": "<-",
+                    "url": "http://i.imgur.com/KUJPgGV.png",
+                    "header": { },
+                    "style": {
+                      "width": "30",
+                      "height": "10",
+                      "color": "rgb(0,0,0)",
+                      "background": "rgb(0,0,0)",
+                      "corner_radius": "0",
+                      "padding": "10",
+                      "align": "left"
+                    },
+                    "action": { }
+                  },
+                  {
+                    "type": "label",
+                    "text": "{{$global.curDate}}",
+                    "style": {
+                      "font": "AcademyEngravedLetPlain",
+                      "size": "30",
+                      "color": "rgb(0,0,0)",
+                      "padding": "10",
+                      "background": "rgb(0,0,0)",
+                      "corner_radius": "0"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "text": "->",
+                    "url": "http://i.imgur.com/KUJPgGV.png",
+                    "header": { },
+                    "style": {
+                      "width": "30",
+                      "height": "10",
+                      "color": "rgb(0,0,0)",
+                      "background": "rgb(0,0,0)",
+                      "corner_radius": "0",
+                      "padding": "10",
+                      "align": "left"
+                    },
+                    "action": { }
+                  }
+                ]
               },
               {
                 "type": "label",
-                "text": "{{new Date().toISOString()}}",
-                "class": "bold",
+                "text": "Main content",
                 "style": {
-                  "padding": "20"
-                },
-                "href": {
-                  "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/weekly.json"
-                }
-              },
-              {
-                "type": "label",
-                "text": "Read Latest Forum Posts",
-                "class": "bold",
-                "style": {
-                  "padding": "20"
-                },
-                "href": {
-                  "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/forum.json"
-                }
-              },
-              {
-                "type": "label",
-                "text": "Made by Ninjas.cl",
-                "class": "bold",
-                "style": {
-                  "padding": "20"
-                },
-                "href": {
-                  "url": "http://www.ninjas.cl",
-                  "view": "web"
+                  "font": "AcademyEngravedLetPlain",
+                  "size": "30",
+                  "color": "rgb(0,0,0)",
+                  "padding": "10",
+                  "background": "rgb(0,0,0)",
+                  "corner_radius": "0"
                 }
               }
             ]
