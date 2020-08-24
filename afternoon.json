@@ -34,7 +34,7 @@
               "action":{
                 "type": "$global.set",
                 "options": {
-                  "curDate": "{{new Date().toISOString()}}"
+                  "curDate": "{{new Date()}}"
                 },
                 "success":                {
                   "type": "$render",
