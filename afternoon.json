@@ -59,7 +59,7 @@
                       "width": "30",
                       "height": "10",
                       "color": "rgb(0,0,0)",
-                      "background": "rgb(0,0,0)",
+                      "background": "rgb(255,255,255)",
                       "corner_radius": "0",
                       "padding": "10",
                       "align": "left"
@@ -87,7 +87,7 @@
                       "width": "30",
                       "height": "10",
                       "color": "rgb(0,0,0)",
-                      "background": "rgb(0,0,0)",
+                      "background": "rgb(255,255,255)",
                       "corner_radius": "0",
                       "padding": "10",
                       "align": "left"
@@ -104,7 +104,7 @@
                   "size": "30",
                   "color": "rgb(0,0,0)",
                   "padding": "10",
-                  "background": "rgb(0,0,0)",
+                  "background": "rgb(255,255,255)",
                   "corner_radius": "0"
                 }
               }
