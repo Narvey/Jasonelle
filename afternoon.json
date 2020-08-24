@@ -55,7 +55,7 @@
               },
               {
                 "type": "label",
-                "text": "{{()=>{console.log(66785);return new Date().toISOString()}()}}",
+                "text": "{{new Date().toISOString()}}",
                 "class": "bold",
                 "style": {
                   "padding": "20"
