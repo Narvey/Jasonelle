@@ -36,8 +36,8 @@
                 "options": {
                   "curDate": "{{new Date()}}"
                 },
-                "success":                {
-                  "type": "$render",
+                "success": {
+                  "type": "$reload",
                   "success": { },
                   "error": { }
                  }
