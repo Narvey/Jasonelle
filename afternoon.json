@@ -57,11 +57,9 @@
                     "header": { },
                     "style": {
                       "width": "30",
-                      "height": "10",
+                      "height": "30",
                       "color": "rgb(0,0,0)",
                       "background": "rgb(f,f,f)",
-                      "corner_radius": "0",
-                      "padding": "10",
                       "align": "left"
                     },
                     "action": { }
@@ -84,12 +82,10 @@
                     "header": { },
                     "style": {
                       "width": "30",
-                      "height": "10",
+                      "height": "30",
                       "color": "rgb(0,0,0)",
                       "background": "rgb(f,f,f)",
-                      "corner_radius": "0",
-                      "padding": "10",
-                      "align": "left"
+                      "align": "right"
                     },
                     "action": { }
                   }
@@ -101,21 +97,7 @@
               },
               {
                 "type": "label",
-                "text": "Hello world"
-              },
-              {
-                "type": "button",
-                "text": "Click Me",
-                "action": {
-                  "type": "$util.banner",
-                  "options": {
-                    "title": "Yup",
-                    "description": "You clicked me",
-                    "type": "info"
-                  },
-                  "success": {  },
-                  "error": { }
-                }
+                "text": "updated"
               }
             ]
           }
