@@ -34,7 +34,7 @@
               "action":{
                 "type": "$global.set",
                 "options": {
-                  "curDate": "thisval"
+                  "curDate": "I want Text here for now"
                 },
                 "success":                {
                   "type": "$render",
