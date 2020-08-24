@@ -6,7 +6,7 @@
         "offline": "true",
         "styles": {},
         "actions": {"$load":[{
-          "{{#if $global.curDate}}": {
+          "{{#if $global.curDate/*  yes, this works!  */  }}": {
             "type": "$util.banner",
             "options": {
               "title": "if",
@@ -34,7 +34,7 @@
               "action":{
                 "type": "$global.set",
                 "options": {
-                  "curDate": "I want Text here for now"
+                  "curDate": "{{new Date().toISOString()}}"
                 },
                 "success":                {
                   "type": "$render",
