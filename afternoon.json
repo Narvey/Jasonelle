@@ -31,12 +31,17 @@
                 "right": "30",
                 "bottom": "30"
               },
-              "action": 
-              {
-                "type": "$render",
-                "success": { },
-                "error": { }
-              }
+              "action":{
+                "type": "$global.set",
+                "options": {
+                  "curDate": "thisval"
+                },
+                "success":                {
+                  "type": "$render",
+                  "success": { },
+                  "error": { }
+                 }
+                }
             }
         ],
         "sections": [
