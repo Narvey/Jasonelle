@@ -60,7 +60,7 @@
               },
               {
                 "type": "label",
-                "text": "Read ProcessWire Weekly",
+                "text": "{{new Date().toISOString()}}",
                 "class": "bold",
                 "style": {
                   "padding": "20"
