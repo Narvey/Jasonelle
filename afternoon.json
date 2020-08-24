@@ -99,6 +99,24 @@
               {
                 "type": "label",
                 "text": "Main content"
+              },
+              {
+                "type": "label",
+                "text": "Hello world"
+              },
+              {
+                "type": "button",
+                "text": "Click Me",
+                "action": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Yup",
+                    "description": "You clicked me",
+                    "type": "info"
+                  },
+                  "success": {  },
+                  "error": { }
+                }
               }
             ]
           }
