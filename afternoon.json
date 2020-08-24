@@ -55,7 +55,7 @@
               },
               {
                 "type": "label",
-                "text": "Read ProcessWire Weekly",
+                "text": "{{()=>{console.log(66785);return new Date().toISOString()}()}}",
                 "class": "bold",
                 "style": {
                   "padding": "20"
