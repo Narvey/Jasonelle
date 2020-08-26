@@ -63,16 +63,7 @@
                                     "type": "error"
                                 }
                             }
-                        },
-                        {
-                            "{{#each data.items}}": {
-                                "type": "{{type}}",
-                                "text": "{{text}}",
-                                "action": "{{action}}",
-                                "style": "{{style}}"
-                            }
-                        }
-                    ],
+                        }                    ],
                     "layers": [],
                     "footer": {}
                 }
