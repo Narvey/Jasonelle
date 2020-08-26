@@ -19,6 +19,14 @@
                         "text": "Hello world"
                     },
                     {
+                        "type": "space",
+                        "style": {
+                            "background": "rgb(f,0,0)",
+                            "width": "30",
+                            "height": "10"
+                        }
+                    },
+                    {
                         "type": "button",
                         "text": "Click Me",
                         "action": {}
@@ -41,7 +49,7 @@
                             "style": {
                                 "width": "30",
                                 "height": "10",
-                                "color": "rgb(0,0,0)",
+                                "color": "rgb(f,0,0)",
                                 "background": "rgb(0,0,0)",
                                 "corner_radius": "0",
                                 "padding": "10",
@@ -57,7 +65,12 @@
                             }
                         },
                         {
-                            "{{#each $cache.items}}": "{{this}}"
+                            "{{#each data.items}}": {
+                                "type": "{{type}}",
+                                "text": "{{text}}",
+                                "action": "{{action}}",
+                                "style": "{{style}}"
+                            }
                         }
                     ],
                     "layers": [],
