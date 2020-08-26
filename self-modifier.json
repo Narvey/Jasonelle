@@ -1,0 +1,69 @@
+{
+    "$jason": {
+        "head": {
+            "title": "Self-modifier",
+            "description": "Use the menu to add things and make them do things",
+            "offline": "true",
+            "styles": {},
+            "actions": {
+                "$load": {
+                    "type": "$render",
+                    "success": {},
+                    "error": {}
+                }
+            },
+            "data": {
+                "items": [
+                    {
+                        "type": "label",
+                        "text": "Hello world"
+                    },
+                    {
+                        "type": "button",
+                        "text": "Click Me",
+                        "action": {}
+                    }
+                ]
+            },
+            "templates": {
+                "body": {
+                    "header": {},
+                    "sections": [
+                        {
+                            "type": "textfield",
+                            "name": "textToAdd",
+                            "placeholder": "textToAdd",
+                            "keyboard": "text"
+                        },
+                        {
+                            "type": "button",
+                            "text": "Add text",
+                            "style": {
+                                "width": "30",
+                                "height": "10",
+                                "color": "rgb(0,0,0)",
+                                "background": "rgb(0,0,0)",
+                                "corner_radius": "0",
+                                "padding": "10",
+                                "align": "left"
+                            },
+                            "action": {
+                                "type": "$util.banner",
+                                "options": {
+                                    "title": "Wish I could add as component",
+                                    "description": "{{textToAdd}}",
+                                    "type": "error"
+                                }
+                            }
+                        },
+                        {
+                            "{{#each $cache.items}}": "{{this}}"
+                        }
+                    ],
+                    "layers": [],
+                    "footer": {}
+                }
+            }
+        }
+    }
+}

@@ -16,10 +16,76 @@
             "success": {  },
             "error": { }
           }
+        },
+        {
+          "type": "$render",
+          "success": { },
+          "error": {
+            "type": "$util.banner",
+            "options": {
+              "title": "error rendering",
+              "description": "{{var filtered = $jason; delete filtered.head; delete filtered.templates; return filtered}}",
+              "type": "error"
+            },
+            "success": {  },
+            "error": { }
+          }
         }]}
       },
       "templates":{
       "body": {
+        "header": {
+          "type":"horizontal",
+          "components":[
+            {
+              "type": "button",
+              "text": "<-",
+              "header": { },
+              "style": {
+                "width": "30",
+                "height": "30",
+                "color": "rgb(0,0,0)",
+                "background": "rgb(f,f,f)",
+                "align": "left"
+              },
+              "action": {
+                "type": "$util.toast",
+                "options": {
+                  "title": "Not implemented yet",
+                  "description": "This is a message",
+                  "form": [  ]
+                },
+                "success": {  },
+                "error": { }
+              }
+            },
+            {
+              "type": "label",
+              "text": "{{$global.curDate}}",
+              "style": {
+                "font": "AcademyEngravedLetPlain",
+                "size": "30",
+                "color": "rgb(0,0,0)",
+                "padding": "10",
+                "background": "rgb(f,f,f)",
+                "corner_radius": "0"
+              }
+            },
+            {
+              "type": "button",
+              "text": "->",
+              "header": { },
+              "style": {
+                "width": "30",
+                "height": "30",
+                "color": "rgb(0,0,0)",
+                "background": "rgb(f,f,f)",
+                "align": "right"
+              },
+              "action": {}
+            }
+          ]
+        },
         "layers": [
             {
               "type": "image",
@@ -48,49 +114,6 @@
         "sections": [
           {
             "items": [
-              {
-                "type":"horizontal",
-                "components":[
-                  {
-                    "type": "button",
-                    "text": "<-",
-                    "header": { },
-                    "style": {
-                      "width": "30",
-                      "height": "30",
-                      "color": "rgb(0,0,0)",
-                      "background": "rgb(f,f,f)",
-                      "align": "left"
-                    },
-                    "action": { }
-                  },
-                  {
-                    "type": "label",
-                    "text": "{{$global.curDate}}",
-                    "style": {
-                      "font": "AcademyEngravedLetPlain",
-                      "size": "30",
-                      "color": "rgb(0,0,0)",
-                      "padding": "10",
-                      "background": "rgb(f,f,f)",
-                      "corner_radius": "0"
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "text": "->",
-                    "header": { },
-                    "style": {
-                      "width": "30",
-                      "height": "30",
-                      "color": "rgb(0,0,0)",
-                      "background": "rgb(f,f,f)",
-                      "align": "right"
-                    },
-                    "action": { }
-                  }
-                ]
-              },
               {
                 "type": "label",
                 "text": "Main content"
